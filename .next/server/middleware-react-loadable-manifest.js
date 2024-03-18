@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"index.js -> ./JobsCreate\":{\"id\":\"index.js -> ./JobsCreate\",\"files\":[\"static/chunks/pages_JobsCreate_js.js\"]},\"index.js -> ./JobsList\":{\"id\":\"index.js -> ./JobsList\",\"files\":[\"static/chunks/pages_JobsList_js.js\"]}}"

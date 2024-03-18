@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "pages_JobsCreate_js";
+exports.ids = ["pages_JobsCreate_js"];
+exports.modules = {
+
+/***/ "./pages/JobsCreate.js":
+/*!*****************************!*\
+  !*** ./pages/JobsCreate.js ***!
+  \*****************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _aws_amplify_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @aws-amplify/ui-react */ \"@aws-amplify/ui-react\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_aws_amplify_ui_react__WEBPACK_IMPORTED_MODULE_2__]);\n_aws_amplify_ui_react__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\nconst JobsList = ()=>{\n    const [domLoaded, setDomLoaded] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        setDomLoaded(true);\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: domLoaded && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_aws_amplify_ui_react__WEBPACK_IMPORTED_MODULE_2__.Flex, {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Hello this is create window\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Job\\\\SalesAutomotors\\\\test-component-v2\\\\pages\\\\JobsCreate.js\",\n                lineNumber: 14,\n                columnNumber: 17\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"C:\\\\Job\\\\SalesAutomotors\\\\test-component-v2\\\\pages\\\\JobsCreate.js\",\n            lineNumber: 13,\n            columnNumber: 13\n        }, undefined)\n    }, void 0, false);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (JobsList);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9Kb2JzQ3JlYXRlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBbUQ7QUFDTjtBQUU3QyxNQUFNSSxXQUFXO0lBQ2IsTUFBTSxDQUFDQyxXQUFXQyxhQUFhLEdBQUdKLCtDQUFRQSxDQUFDO0lBQzdDRCxnREFBU0EsQ0FBQztRQUNSSyxhQUFhO0lBQ2YsR0FBRyxFQUFFO0lBRUwscUJBQ0U7a0JBQ01ELDJCQUNFLDhEQUFDRix1REFBSUE7c0JBQ0QsNEVBQUNJOzBCQUFHOzs7Ozs7Ozs7Ozs7QUFPcEI7QUFFQSxpRUFBZUgsUUFBUUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3Rlc3QtY29tcG9uZW50LXYyLy4vcGFnZXMvSm9ic0NyZWF0ZS5qcz83N2Y2Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgeyBGbGV4IH0gZnJvbSAnQGF3cy1hbXBsaWZ5L3VpLXJlYWN0JztcclxuXHJcbmNvbnN0IEpvYnNMaXN0ID0gKCkgPT4ge1xyXG4gICAgY29uc3QgW2RvbUxvYWRlZCwgc2V0RG9tTG9hZGVkXSA9IHVzZVN0YXRlKGZhbHNlKTtcclxuICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgc2V0RG9tTG9hZGVkKHRydWUpO1xyXG4gIH0sIFtdKTtcclxuICBcclxuICByZXR1cm4gKFxyXG4gICAgPD5cclxuICAgICAgICB7IGRvbUxvYWRlZCAmJiAoXHJcbiAgICAgICAgICAgIDxGbGV4PlxyXG4gICAgICAgICAgICAgICAgPGgxPlxyXG4gICAgICAgICAgICAgICAgICAgIEhlbGxvIHRoaXMgaXMgY3JlYXRlIHdpbmRvd1xyXG4gICAgICAgICAgICAgICAgPC9oMT5cclxuICAgICAgICAgICAgPC9GbGV4PlxyXG4gICAgICAgICl9XHJcbiAgICA8Lz5cclxuICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgSm9ic0xpc3Q7XHJcbiJdLCJuYW1lcyI6WyJSZWFjdCIsInVzZUVmZmVjdCIsInVzZVN0YXRlIiwiRmxleCIsIkpvYnNMaXN0IiwiZG9tTG9hZGVkIiwic2V0RG9tTG9hZGVkIiwiaDEiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/JobsCreate.js\n");
+
+/***/ })
+
+};
+;
