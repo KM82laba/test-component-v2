@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Flex } from '@aws-amplify/ui-react';
+import BodyJobCreate from '../src/ui-components/BodyJobCreate.jsx';
+
 
 const JobsList = () => {
     const [domLoaded, setDomLoaded] = useState(false);
@@ -10,11 +12,7 @@ const JobsList = () => {
   return (
     <>
         { domLoaded && (
-            <Flex>
-                <h1>
-                    Hello this is create window
-                </h1>
-            </Flex>
+            <BodyJobCreate/>
         )}
     </>
   );

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
   margin: 0;
+  background-color: #FAF9F9;
 }
 
 .navbar-item:hover {
@@ -14,4 +15,356 @@ body{
 }
 .status-jobs_inactive{
   border-bottom: 1px SOLID rgba(225,227,225,1) !important;
+}
+
+.btn-focus:focus{
+  border: 0;
+}
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.inp .label {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(116, 119, 117);
+  line-height: 21px;
+  text-align: left;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.inp .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.inp input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 0px 0px 0 0px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  transition: all 0.15s ease;
+  white-space: pre-wrap;
+}
+
+.inp input:not(:-moz-placeholder-shown) + .label {
+  transform: translate3d(0, -12px, 0) scale(0.9);
+}
+.inp input:not(:-ms-input-placeholder) + .label {
+  transform: translate3d(0, -12px, 0) scale(0.9);
+}
+.inp input:not(:placeholder-shown) + .label {
+  transform: translate3d(0, -12px, 0) scale(0.9);
+}
+.inp input:focus {
+  outline: none;
+}
+.inp input:focus + .label {
+  transform: translate3d(0, -12px, 0) scale(0.90);
+}
+.inp input:focus + .label + .focus-bg {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}
+.select-input {
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 0px 0px 0 0px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  transition: all 0.15s ease;
+  white-space: pre-wrap;
+}
+
+.select-input:not(:-moz-placeholder-shown) + .label,
+.select-input:not(:-ms-input-placeholder) + .label,
+.select-input:not(:placeholder-shown) + .label {
+  transform: translate3d(0, -12px, 0) scale(0.9);
+}
+
+.select-input:not(:focus) + .label {
+  transform: translate3d(0, -12px, 0) scale(0.9);
+}
+
+.select-input:not(:focus) + .label + .focus-bg {
+  transform: scaleX(1);
+}
+
+.select-input:focus {
+  outline: none;
+}
+
+
+
+.select-input + .label {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(116, 119, 117);
+  line-height: 21px;
+  text-align: left;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+/* Перемещение лейбла при фокусе */
+.select-input:focus + .label,
+.select-input.selected + .label {
+  transform: translate3d(0, -12px, 0) scale(0.9);
+  top: 10px; /* Позиция лейбла над выбранным значением */
+  font-size: 12px; /* Размер плейсхолдера при выборе значения */
+  color: #555;
+}
+
+/* Перемещение фокусного фона при фокусе */
+.select-input:focus + .label + .focus-bg,
+.select-input.selected + .label + .focus-bg {
+  transform: scaleX(1);
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  font-family: inherit;
+}
+
+.select-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.select-value {
+  padding: 8px 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.select-arrow {
+  padding: 15px 16px 10px 8px;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.select-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.custom-style {
+  gap: 8px;
+  flex-direction: row;
+  width: unset;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  position: relative;
+  border-radius: 10px;
+  padding: 6px 16px;
+  background-color: rgba(188, 220, 188, 1);
+}
+
+
+.select-button {
+  width: 240px;
+  height: 40px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgba(188, 220, 188, 1);
+  padding: 0.675em 1em;
+  border: 1px solid #caced1;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.selected-value {
+  text-align: left;
+}
+
+.arrow {
+  transition: transform ease-in-out 0.3s;
+}
+
+.select-dropdown {
+  position: absolute;
+  list-style: none;
+  width: 280px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  max-height: 256px;
+  overflow-y: auto;
+  transition: 0.5s ease;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s ease;
+}
+
+.select-dropdown:focus-within {
+  box-shadow: 0 10px 25px rgb(0, 0, 0);
+}
+
+.select-dropdown li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.select-dropdown li label {
+  width: 100%;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.select-dropdown::-webkit-scrollbar {
+  width: 7px;
+}
+.select-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.select-dropdown li:hover,
+.select-dropdown input:checked ~ label {
+  background-color: #f2f2f2;
+}
+
+.select-dropdown input:focus ~ label {
+  background-color: #dfdfdf;
+}
+
+.select-dropdown input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.custom-select-status.active .arrow {
+  transform: rotate(180deg);
+}
+
+.custom-select-status.active .select-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.jobadd-addtags-container{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  
+
+  width: 360px;
+  height: 281px;
+  padding: 8px 12px 8px 12px;
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0px;
+
+}
+.jobadd-addtags-list{
+  display: 'flex'; 
+  flex-direction: 'row'; 
+  flex-wrap: 'wrap';
+  max-height: 160px;
+  overflow-y: auto;
+  gap: 8px;
+
+  font-family: Roboto;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.jobadd-addtags-list-item{
+  cursor: 'pointer'; 
+  padding: '4px';
+  margin: '4px'; 
+  border-radius: '4px'; 
+}
+.jobadd-addtags-list-search-input {
+  border: 0;
+  outline: none;
+}
+.jobadd-button:active{
+  
+  outline: none;
+    
 }
